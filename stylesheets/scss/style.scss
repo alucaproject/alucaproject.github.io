@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+$pageHeight: 100vh;
+$fontSize1: 18px;
+$fontSize2: 26px;
+$iconSize: 60px;
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+h2 {
+    font-size: $fontSize2;
+}
+.bigText {
+    font-size: 26px;
+}
+a {
+    color: #3e3e3b;
+    text-decoration: none;
+}
+a:hover {
+    color: #4c586f;
+    opacity: .8; 
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: $fontSize1;
+    letter-spacing: 2px;
+    color:#3e3e3b;
+    font-weight: thin;
+}
+header {
+    height: $pageHeight;
+    overflow: hidden;
+    background-color:#ebeced;  
+}
+.headerWrapper {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.title {
+    font-size: 20vw;
+    font-weight: 900;
+    color: #3e3e3b;
+    z-index: 1;
+
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    opacity: 0;
+    // -webkit-animation-name: fadeInLeft;
+    // -moz-animatioin-name: fadeInLeft;
+    // -o-animation-name: fadeInLeft;
+    // animation-name: fadeInLeft;
+    -webkit-animation-duration: 1s;
+    -moz-animatioin-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: .5s;
+    -moz-animatioin-delay: .5s;
+    -o-animation-delay: .5s;
+    animation-delay: .5s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animatioin-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-out;
+    -moz-animatioin-timing-function: ease-out;
+    -o-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+.cover {
+    height: 45vh;
+    position: absolute;
+    top: 40vh;
+    left: 70%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+section {
+    position: relative;
+    min-height: $pageHeight;
+    background-color: #ebeced;
+    padding: 70px 10px 10px 10px;
+}
+section:nth-of-type(2) {
+    background-color: #4c586f;
+    color: #fff;
+}
+.sectionWrapper {
+    position: relative;
+    width: auto;
+    margin: 0 auto;
+    background-color: transparent;
+}
+.sectionGrid {
+    min-height: 80vh;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center; 
+}
+.sectionGrid > div:nth-of-type(1){
+    width: 100%;
+    text-align: center;
+}
+.portrait {
+    display: inline-block;
+    border: 20px solid #fff;
+    width: 70vw;
+
+    opacity: 0;
+    // -webkit-animation-name: fadeInLeft;
+    // -moz-animatioin-name: fadeInLeft;
+    // -o-animation-name: fadeInLeft;
+    // animation-name: fadeInLeft;
+    -webkit-animation-duration: 1s;
+    -moz-animatioin-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    // -webkit-animation-delay: 1s;
+    // -moz-animatioin-delay: 1s;
+    // -o-animation-delay: 1s;
+    // animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animatioin-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-out;
+    -moz-animatioin-timing-function: ease-out;
+    -o-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+.slideDisplay {
+    overflow: hidden;
+}
+.slide {
+    height: auto;
+    overflow: hidden;
+}
+.workGrid {
+    height: 90vh;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center; 
+}
+.workGrid > div{
+    min-height: 30vh; // Just to keep the slideshow a little balanced.
+}    
+.workGrid > div:nth-of-type(1){
+    width: 100%;
+}
+.workGrid > div:nth-of-type(1) > .textWrapper > p {
+    padding: 0px 0px 10px 0px;
+}
+.stackIcons > li {
+    display: inline-block;
+    font-size: $fontSize2;
+    color: #fff;
+}
+.workLink > a {
+    color: #fff;
+}
+.workImage {
+    height: 30vh;
+    box-shadow: 5px 5px 15px 0px #3e3e3b;
+}
+.contactGrid {
+    min-height: 80vh;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center; 
+}
+.contactGrid > div {
+    text-align: center; 
+    min-height: 20vw;
+
+    opacity: 0;
+    // -webkit-animation-name: fadeInLeft;
+    // -moz-animatioin-name: fadeInLeft;
+    // -o-animation-name: fadeInLeft;
+    // animation-name: fadeInLeft;
+    -webkit-animation-duration: 1s;
+    -moz-animatioin-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    // -webkit-animation-delay: 1s;
+    // -moz-animatioin-delay: 1s;
+    // -o-animation-delay: 1s;
+    // animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animatioin-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-out;
+    -moz-animatioin-timing-function: ease-out;
+    -o-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+.contactGrid >div:nth-of-type(2){
+    -webkit-animation-delay: .5s;
+    -moz-animatioin-delay: .5s;
+    -o-animation-delay: .5s;
+    animation-delay: .5s;
+}
+.contactGrid >div:nth-of-type(3){
+    -webkit-animation-delay: 1s;
+    -moz-animatioin-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.contactIcon {
+    font-size: $iconSize;
+    color: #4c586f;
+}
+footer {
+    height: 45vh;
+    background: #a2aab0;
+    color: #ebeced;
+    padding: 10px;
+
+    position: relative;
+}
+#footerLinks {
+    float: left;
+}
+#footerPages {
+    display: inline-block;
+    vertical-align: top;
+}
+#footerPages > li {
+    padding: 0px 10px 10px 0px;
+}
+#footerSocialMedia {
+    display: inline-block;
+    vertical-align: top;
+}
+#footerSocialMedia > li {
+    padding: 0px 10px 10px 0px;
+}
+#footerText {
+    text-align: left;
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+}
+/* Animation */
+@keyframes fadeInLeft {
+    0% {margin-left: -5vw; opacity: 0;}
+    100% {margin-left: 0px; opacity: 1;}
+}
+@keyframes fadeInTop {
+    0% {margin-top: -5vw; opacity: 0;}
+    100% {margin-top: 0px; opacity: 1;}
+}
+/* Breakpoint - Desktop */
+@media (min-width: 768px) {
+section {
+    padding: 70px;
+}
+.sectionGrid {
+    grid-template-columns: 1fr 1fr;
+}
+.title {
+    font-size: 10vw;
+    left: 70px;
+}
+.cover {
+    top: 10vh;
+    height: 90vh;
+    max-height: 90vh;
+}
+.portrait {
+    width: 25vw;
+}
+.workGrid {
+    grid-template-columns: 1fr 1fr;
+}
+.workImage {
+    height: 45vh;
+}
+.contactGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+footer {
+    padding: 70px;
+}
+#footerText {
+    left: 70px;
+}
+}
+/* Breakpoint - Large monitors */
+@media (min-width: 1680px) {
+.sectionWrapper {
+    width: calc(100vw / 2);
+}
+}

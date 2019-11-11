@@ -1,0 +1,32 @@
+/* Dot Navigation */
+.dotNav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  z-index: 3; }
+
+.dotItem {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border: 3px solid #3e3e3b;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color .5s ease; }
+
+.dotItem:hover {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border: 3px solid inherit;
+  border-radius: 20px;
+  background-color: #3e3e3b; }
+
+.dotItemActive {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border: 3px solid inherit;
+  border-radius: 20px;
+  background-color: #3e3e3b; }
